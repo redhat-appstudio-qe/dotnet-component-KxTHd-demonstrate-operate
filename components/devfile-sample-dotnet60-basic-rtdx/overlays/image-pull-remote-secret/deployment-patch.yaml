@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dotnet60-basic-rtdx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: var_name
+          value: test
+        image: quay.io/rsoaresd_org/spi-demos-knpc-tenant/dotnet-component/devfile-sample-dotnet60-basic-rtdx@sha256:f809fa4f6a260f86d87f1a1c813150289601a95da4e60a65e1d3e7b132bbac4c
+        name: main
+        resources: {}
+status: {}
